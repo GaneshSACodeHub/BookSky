@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="titlespace">
+        <h1>BookSky</h1>
+    </div>
+
+    <div class="samplebox">
+        <div class="Book-samplebox">
+        <h1>The Alchemist</h1>
+        <h5>Paulo Coelho</h5>
+        <p>This novel follows Santiago, a shepherd boy, on a journey to discover his personal legend and treasure. It’s a story about dreams, destiny, and listening to your heart. Through mystical encounters and life lessons, he learns that true treasure lies within.</p>
+        <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div> 
+
+    <div class="popup-overlapping"></div>
+    <div class="popup-box">
+        <h2>ADD BOOK</h2>
+        <form>
+            <input type="text" placeholder="Book Name" id="Bookname-input">
+            <input type="text" placeholder="Author Name" id="Author-input">
+            <textarea placeholder="Book Description" id="Description-input"></textarea>
+            <button id="Bookadd-button">Add</button>
+            <button id="Bookcancel-button">Cancel</button>
+        </form>
+    </div>
+
+    <button class="add-button" id="add-popup">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
