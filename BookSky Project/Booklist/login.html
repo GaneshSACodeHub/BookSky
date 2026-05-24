@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - BookSky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" id="loginForm">
+            <h2>Login to BookSky</h2>
+            <input type="email" placeholder="Email" id="login-email" required>
+            <input type="password" placeholder="Password" id="login-password" required>
+            <button type="submit">Login</button>
+            <div class="login-links">
+                <a href="index.html">Back to Home</a>
+            </div>
+        </form>
+    </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // (Optional: add validation here)
+            window.location.href = 'main.html';
+        });
+    </script>
+</body>
+</html>
